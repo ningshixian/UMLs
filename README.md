@@ -4,7 +4,7 @@
 
 ## UMLS的组成？
 主要包含三个工具：超级叙词表、语义网络和专家词典
-![]()
+![](https://github.com/ningshixian/UMLs/blob/master/1.png)
 
 1. 一个巨大的实体数据库：元数据词典（Metathesaurus）也叫超级叙词表？
 概念名词知识库--  由许多不同的词典，分类，代码集，索引和编目生物医学文献组成，包括CPT®，ICD-10-CM，LOINC®，MeSH®，RxNorm和SNOMEDCT®
@@ -29,7 +29,7 @@ SPECIALIST词汇和词汇工具一起使用户可以开发自然语言处理程�
 # UMLS 的元数据词典(超级叙词表)介绍：
 
 1. 超级叙词表的的概念表达的基本架构如图 2-1 所示采用了  概念(I 级)→术语 (II 级)→字符串(III 级)→原词（IV 级）四级结构模型。
-![]()
+![](https://github.com/ningshixian/UMLs/blob/master/2.png)
 2. UMLS 的元数据词典是以概念为核心，依据概念（Concept, C）组织起来的。概念结构的设计方法是将同一概念的各种名称（同义词）和 变种形式（单复数、形容词等词性变体）联系在一起。一般来说，表达同一概念可以有多个术语（即同义词），而每一个术语又有 不同的词串表达方式，在超级叙词表中，多个术语体现为同义词，不同的词串 表达方式体现为词性变体。
 3. 概念结构: CUI-LUI-SUI-AUI
 （1）概念和概念标识符：每个概念被指定一个概念识别码（Concept Identifier, CUI），并给出了概念 类别和概念的描述文本。相同 CUI 代表概念的同义词集合。
@@ -40,10 +40,10 @@ SPECIALIST词汇和词汇工具一起使用户可以开发自然语言处理程�
 5. Metathesaurus数据文件
 Metathesaurus 有40多个元数据和索引 数据文件。
 下面列出的数据文件包含从源词汇获得的信息。概念唯一标识符（CUI）跨文件链接概念数据。下表说明了什么信息填充每个数据文件。
-![]()
+![](https://github.com/ningshixian/UMLs/blob/master/3.png)
 
 6. MRCONSO.RRF 元数据项包括：
-![]()
+![](https://github.com/ningshixian/UMLs/blob/master/4.png)
 
 7. MRREL.RRF      概念与词串的通用关系文档
      RB       广义关系
@@ -56,7 +56,9 @@ Metathesaurus 有40多个元数据和索引 数据文件。
      QA        限定关系
  共11种关系。
  
- 8. MRSTY.RRF      概念所属的语义类型文档
+8. MRSTY.RRF      概念所属的语义类型文档
+![](https://github.com/ningshixian/UMLs/blob/master/5.png)
+![](https://github.com/ningshixian/UMLs/blob/master/6.png)
  
 # 语义网络（Semantic Network）
 
