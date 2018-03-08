@@ -84,7 +84,21 @@ Metathesaurus 有40多个元数据和索引 数据文件。
 语义表达工具 SemRep 通过对 UMLS 专家词典的相关工具和自然语言处理 技术的应用，将生物医学文本进行词性上的标注和语句层次的切分，使用 MetaMap 对所获得的术语与 UMLS 超级叙词表概念之间进行映射，获得相应概念以及概念在语义网络中对应的语义类型和语义关系，并通过概念共现来获得此生物医学文本信息的主要论点，使用主语-谓词-对象语义表达形式将该文本主旨内容表现出来 。
 
 ----
+# 词典利用
+如何利用词典的知识用于生物医学实体识别和分类，包括以下几种方法：
+
+## 实体表示学习
 1. 从 PubMed 选择 在医学主题词（Medical Subject Headings, Mesh）中包含“疾病”（disease）、“基 因”（gene）和“药物”（drug）的文章，训练词向量；
 2. 利用 UMLS 的元数据词典，学习生物医学实体表示。
     1. 利用词典中的概念描述文本和上述获得的词向量学习初始概念表示。采用 CBOW 模型/CNN 模型
     2. 利用词典的同一实体多种变体、不同实体同名、实体类型、上下位词等多方 面的语义相关性信息，利用自动编码机模型学习实体表示。
+    
+## 将词典融入NN
+为了解决OOV（Out-of-Vocabulary）问题，参考AAAI2018论文《Neural networks Incorporating Dictionaries for  Chinese Word Segmentation》
+
+How to integrate dictionaries?
+We first define several feature templates to construct feature vectors for each character based on dictionaries and contexts.
+Then, two different methods that extend the Bi-LSTM-CRF are  proposed to introduce the feature vectors.
+
+
+## 实体表示学习
