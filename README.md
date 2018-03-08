@@ -99,7 +99,8 @@ Metathesaurus 有40多个元数据和索引 数据文件。
 为了解决OOV（Out-of-Vocabulary）问题，参考AAAI2018论文《Neural networks Incorporating Dictionaries for  Chinese Word Segmentation》
 
 How to integrate dictionaries?
-We first define several feature templates to construct feature vectors for each character based on dictionaries and contexts.
-Then, two different methods that extend the Bi-LSTM-CRF are  proposed to introduce the feature vectors.
+- We first define several feature templates to construct feature vectors for each character based on dictionaries and contexts.
+- Then, two different methods that extend the Bi-LSTM-CRF are  proposed to introduce the feature vectors.
+
 ![](https://github.com/ningshixian/UMLs/blob/master/7.png)
 
