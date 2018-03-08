@@ -92,6 +92,8 @@ Metathesaurus 有40多个元数据和索引 数据文件。
 2. 利用 UMLS 的元数据词典，学习生物医学实体表示。
     1. 利用词典中的概念描述文本和上述获得的词向量学习初始概念表示。采用 CBOW 模型/CNN 模型
     2. 利用词典的同一实体多种变体、不同实体同名、实体类型、上下位词等多方 面的语义相关性信息，利用自动编码机模型学习实体表示。
+
+![](https://github.com/ningshixian/UMLs/blob/master/8.png)
     
 ## 将词典融入NN
 为了解决OOV（Out-of-Vocabulary）问题，参考AAAI2018论文《Neural networks Incorporating Dictionaries for  Chinese Word Segmentation》
@@ -99,6 +101,5 @@ Metathesaurus 有40多个元数据和索引 数据文件。
 How to integrate dictionaries?
 We first define several feature templates to construct feature vectors for each character based on dictionaries and contexts.
 Then, two different methods that extend the Bi-LSTM-CRF are  proposed to introduce the feature vectors.
+![](https://github.com/ningshixian/UMLs/blob/master/7.png)
 
-
-## 实体表示学习
